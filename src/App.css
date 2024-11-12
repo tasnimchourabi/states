@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+ background-color: rgb(40, 39, 39);
 }
 
 .App-logo {
@@ -35,4 +36,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+.navbar{
+  width: 100%;
+  background-color: black;
+}
+.card-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+  gap: 6em; 
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 5%;
+  padding-top: 7%;
+  
+}
+.card{
+ display: flex; 
+  box-shadow: 0 4px 8px rgba(197, 171, 171, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 25%;
+
+ 
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image{
+  width: 80%;
+  height: 300px;
+  margin-left: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.card-container .card h3{
+  font-size: 27px;
+  padding-left: 50px;
+
 }
